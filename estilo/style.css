@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: #262626;
+    color: beige;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px ;
+    font-variant: small-caps; /* letras maiscula mais moderna  */
+    font-family: var(--fonte2);
+    font-size: 3em;
+
+    
+}
+
+header > p {
+    padding-bottom: 50px;
+    
+
+}
+
+header a, footer a {
+    color: wheat;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+    color: white;
+    
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 40px;
+    font-family: var(--fonte3);
+    font-size: 1.5em;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: #A3BFD9; 
+    color: black;
+    
+}
+
+section.imagem {
+    background-color: rebeccapurple;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.568);
+    background-attachment: fixed; /* efeito paralax */
+
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(7, 7, 7, 0.247);
+    text-shadow: 2px 3px 0px black;
+
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
